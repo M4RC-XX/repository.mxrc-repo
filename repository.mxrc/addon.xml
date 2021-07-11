@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.mxrc"
+		name="MXRC"
+		version="0.0.1"
+		provider-name="Insta: mxrc_xx_">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+	<extension point="xbmc.addon.repository" name="QuantumRepo Android">
+		<info>https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/addons.xml.md5</checksum>
+		<datadir>https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/</datadir>
+		<artdir>https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/</artdir>
+		<hashes>false</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>MXRC Kodi Repository</summary>
+		<description>MXRC Kodi Repository</description>
+		<disclaimer>Instagram: mxrc_xx_/</disclaimer>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+			<screenshot>resources/fanart.png</screenshot>
+			<screenshot>resources/fanart.png</screenshot>
+			<screenshot>resources/fanart.png</screenshot>
+		</assets>
+	</extension>
+</addon>
