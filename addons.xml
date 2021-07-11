@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.lastship" version="4.1.2" name="Lastship" provider-name="Lastship">
+    <requires>
+        <import addon="repository.lastship" version="1.0.2" />
+        <import addon="script.lastship.artwork" />
+        <import addon="script.module.urlresolver" />
+        <import addon="script.module.six" version="1.11.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.metahandler" version="1.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="lastship.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">Lastship</summary>
+        <description lang="de">Wir suchen Entwickler. Mit diesem Addon kannst du auf alle angebotenen Streams verschiedenster deutscher Quellen zugreifen. Beachte, dass Lastship kein offizieller Teil des verwendeten Media Players ist, und daher nicht von den offiziellen Support-Kanälen abgedeckt wird. Es handelt sich lediglich um eine Drittanbieter-Erweiterung, die dem System hinzugefügt wurde.</description>
+        <disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern der Software weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+                <screenshot>resources/screenshots/screenshot-01.png</screenshot>
+                <screenshot>resources/screenshots/screenshot-02.png</screenshot>
+                <screenshot>resources/screenshots/screenshot-03.png</screenshot>
+                <screenshot>resources/screenshots/screenshot-04.png</screenshot>
+                <screenshot>resources/screenshots/screenshot-05.png</screenshot>
+        </assets>
+        <news>
+        Die aktuellsten Änderungen findest du im Changelog oder Infos und Updates (whatsnew)
+        </news>
+        </extension>
+</addon>
+
+<addon id="plugin.video.xship" version="2021.07.01" name="Xship" provider-name="Xship-Team">
+    <requires>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.urlresolver" optional="true"/>
+        <!-- for remote debug -->
+        <import addon="script.module.pydevd" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">xShip</summary>
+        <description lang="de">
+Mit diesem Addon kannst du auf alle angebotenen Streams verschiedenster deutscher Quellen zugreifen.
+Beachte, dass Addon kein offizieller Teil des verwendeten Media Players ist, und daher nicht von den offiziellen Support-Kanälen abgedeckt wird.
+Es handelt sich lediglich um eine Drittanbieter-Erweiterung, die dem System hinzugefügt wurde.
+        </description>
+        <disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern der Software weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+        <license>GNU GPLv3</license>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+            <screenshot>resources/media/org-fanart.jpg</screenshot>
+            <!--<screenshot>resources/media/screenshots/screenshot-02.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot-03.jpg</screenshot>-->
+        </assets>
+        <news>
+Xship 2021.07.01
+- englsiche Anbieter entfernt
+- die hohe CPU Last in der Episodenliste beseitigt
+- fix bookmarks in player.py
+- update movie4k-click
+- update kinoger
+- Sourcecode cleaned
+- edit sourcesFilter
+- settings.xml
+- neue Fuktion, Hoster ausschließen
+- streamworld
+        </news>
+    </extension>
+</addon>
+
+<addon id="plugin.video.xstream" name="xStream" version="3.5.22" provider-name="xStream-Team">
+ <requires>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="repository.xstream" optional="true"/>
+    <import addon="script.module.inputstreamhelper" version="0.3.3" optional="true"/>
+ </requires>
+ <extension point="xbmc.python.pluginsource" library="default.py">
+   <provides>video</provides>
+ </extension>
+     <extension point="xbmc.service" library="service.py" start="startup" />
+ <extension point="xbmc.addon.metadata">
+   <summary lang="de">Watch xStream!</summary>
+   <description lang="de">Mit diesem Addon kannst du auf alle angebotenen Streams verschiedenster deutschen Quellen zugreifen</description>
+   <disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+   <source>https://github.com/streamxstream/plugin.video.xstream</source>
+   <license>GNU GPLv3</license>
+   <platform>all</platform>
+   <news>
+3.5.22
+- [kinoag] entfernt
+- [kinoger] entfernt
+- fix Kodi-19-Favoriten-Thumbnails Problem
+- [kinofox] Seite hinzugefügt
+- [movie4k click] fix suche, episode
+- [kinokiste] neue Seite hinzugefügt
+- [kkiste] fix search Problem
+- [Serienstream] Domaincheck Funktion überarbeitet
+- [requestHandler] neue funktionen hinzugefügt, code cleanup
+- [kinobz] add site
+- [movieking] offline entfernt
+- [general] serienstream domain check bei kodistart TNX Kasi
+- [serienstream] add domain check TNX Kasi
+- [general] fix select hoster TNX Kasi
+- [serienstream] update domain 28.3.21
+- [pureanime] fix hoster PureStream
+- [kinoger] fix serien erkennung
+- [netzkino] seite neu geschrieben
+- Implement My.JDownloader support TNX HPort-x
+   </news>
+   <assets>
+     <icon>icon.png</icon>
+     <fanart>fanart.jpg</fanart>
+     <screenshot>resources/art/screenshot.jpg</screenshot>
+   </assets>
+ </extension>
+</addon>
+
+    <addon id="repository.guilouz" name="Guilouz Repository" version="1.0.3" provider-name="Guilouz">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Guilouz Repository">
+                <info compressed="false">https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/_repo/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/_repo/addons.xml.md5</checksum>
+                <datadir zip="true">https://github.com/Guilouz/repository.guilouz/raw/master/_repo</datadir>
+                <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Guilouz's addons repository</summary>
+            <summary lang="fr">Extensions du dépôt de Guilouz.</summary>
+            <description lang="en">Download and install Guilouz's addons repository.</description>
+            <description lang="fr">Téléchargez et installez les extensions du dépôt de Guilouz.</description>
+            <platform>all</platform>
+            <assets>
+ 			   <icon>resources/icon.png</icon>
+ 			   <fanart>resources/fanart.jpg</fanart>
+ 			   <screenshot>resources/screenshot-01.jpg</screenshot>
+ 			   <screenshot>resources/screenshot-02.jpg</screenshot>
+ 			   <screenshot>resources/screenshot-03.jpg</screenshot>
+ 		    </assets>
+            <news>[B]1.0.3[/B][CR]• Changes for Kodi Krypton[CR][CR][B]1.0.2[/B][CR]• Fixes[CR][CR][B]1.0.1[/B][CR]• Changes for Kodi Krypton[CR][CR][B]1.0.0[/B][CR]• Initial release</news>
+    </extension>
+</addon>
+
+<addon id="repository.kodi.yatse.tv" name="Yatse Kodi Add-on repository" version="1.1.0" provider-name="Yatse">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Yatse Kodi Add-on repository">
+		<dir minversion="14.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/Tolriq/repository.yatse.kodi/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Tolriq/repository.yatse.kodi/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Tolriq/repository.yatse.kodi/master/zips/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/Tolriq/repository.yatse.kodi/master/matrix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Tolriq/repository.yatse.kodi/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Tolriq/repository.yatse.kodi/master/matrix/</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Yatse repository for Kodi helper addons</summary>
+		<description lang="en">This repository contains scripts and plugins to help Yatse do things that may not be possible to do from JSON api.</description>
+		<genre></genre>
+		<platform>all</platform>
+		<news>Add support for Kodi 19 necessary addon duplication!</news>
+	</extension>
+</addon>
+
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.1" provider-name="Kodinerds">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
+        <dir>
+            <info compressed="true">https://repo.kodinerds.net/addons/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="18.9.9">
+            <info compressed="true">https://repo.kodinerds.net/addons/matrix/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/matrix/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="18.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/leia/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/leia/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="17.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/krypton/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/krypton/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/krypton/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="16.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/jarvis/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/jarvis/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/jarvis/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="15.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/isengard/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/isengard/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/isengard/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="14.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/helix/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/helix/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/helix/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="13.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/gotham/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/gotham/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/gotham/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Addon repository of the Kodinerds Community</summary>
+        <description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
+        <summary lang="de">Addon Repository der Kodinerds Community</summary>
+        <description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
+        <disclaimer/>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.lastship" name="Lastship Repository" version="1.0.6" provider-name="Lastship">
+	<extension point="xbmc.addon.repository" name="Lastship Repository">
+	<dir>
+        <info compressed="false">https://raw.github.com/lastship/Lastship-Repo/master/addons.xml</info>
+        <checksum>https://raw.github.com/lastship/Lastship-Repo/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.github.com/lastship/Lastship-Repo/master</datadir>
+	</dir>
+    <dir>
+		<info compressed="false">https://github.com/lastship/lastship-common/raw/master/addons.xml</info>
+		<checksum>https://github.com/lastship/lastship-common/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/lastship/lastship-common/raw/master/zips/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Lastship Repository</summary>
+		<description lang="de">Lastship Repository</description>
+		<platform>all</platform>
+   	</extension>
+</addon>
+
+<addon id="repository.marcelveldt" version="1.0.3" name="Marcelveldt's BETA repository" provider-name="marcelveldt, finkleandeinhorn">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/</datadir>
+		</dir>
+		<dir minversion="18.9.700">
+			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/</datadir>
+		</dir>
+		<dir maxversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
+		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.mxrc"
+		name="MXRC"
+		version="0.0.1"
+		provider-name="Insta: mxrc_xx_">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+	<extension point="xbmc.addon.repository" name="QuantumRepo Android">
+		<info>https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/addons.xml.md5</checksum>
+		<datadir>https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/</datadir>
+		<artdir>https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/</artdir>
+		<hashes>false</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>MXRC Kodi Repository</summary>
+		<description>MXRC Kodi Repository</description>
+		<disclaimer>Instagram: mxrc_xx_/</disclaimer>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+			<screenshot>resources/fanart.png</screenshot>
+			<screenshot>resources/fanart.png</screenshot>
+			<screenshot>resources/fanart.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.openwizard" name="[COLOR limegreen][B]Open[/B][/COLOR]Wizard Repository" version="2.0" provider-name="drinfernoo">
+    <extension point="xbmc.addon.repository" name="[COLOR limegreen][B]Open[/B][/COLOR]Wizard Repository">
+        <dir minversion="18.0" maxversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/</datadir>
+        </dir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR limegreen][B]Open[/B][/COLOR]Wizard</summary>
+        <description>The official home of [COLOR limegreen][B]Open[/B][/COLOR]Wizard.</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <source>https://www.github.com/a4k-openproject/repository.openwizard/</source>
+    </extension>
+</addon>
+
+<addon id="repository.quantumrepo"
+		name="QuantumRepo"
+		version="0.3.1"
+		provider-name="InvisibleQuantum">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+	<extension point="xbmc.addon.repository" name="QuantumRepo">
+		<info compressed="false">https://raw.githubusercontent.com/InvisibleQuantum/repository.quantumrepo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/InvisibleQuantum/repository.quantumrepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/InvisibleQuantum/repository.quantumrepo/master/</datadir>
+		<artdir>https://raw.githubusercontent.com/InvisibleQuantum/repository.quantumrepo/master/</artdir>
+		<hashes>false</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">InvisibleQuantum Kodi Repository</summary>
+		<summary lang="en_GB">InvisibleQuantum Kodi Repository</summary>
+		<summary lang="en_US">InvisibleQuantum Kodi Repository</summary>
+		<description lang="de_DE">InvisibleQuantum Kodi Repository</description>
+		<description lang="en_GB">InvisibleQuantum Kodi Repository</description>
+		<description lang="en_US">InvisibleQuantum Kodi Repository</description>
+		<disclaimer lang="de_DE">Fehler oder andere Anfragen hier melden: https://github.com/InvisibleQuantum/repository.quantumrepo/issues/</disclaimer>
+		<disclaimer lang="en_GB">Report bugs or other requests here: https://github.com/InvisibleQuantum/repository.quantumrepo/issues/</disclaimer>
+		<disclaimer lang="en_US">Report bugs or other requests here: https://github.com/InvisibleQuantum/repository.quantumrepo/issues/</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+			<screenshot>resources/fanart.png</screenshot>
+			<screenshot>resources/fanart.png</screenshot>
+			<screenshot>resources/fanart.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.quantumrepo.android"
+		name="QuantumRepo Android"
+		version="0.1.3"
+		provider-name="InvisibleQuantum">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+	<extension point="xbmc.addon.repository" name="QuantumRepo Android">
+		<info>https://raw.githubusercontent.com/InvisibleQuantum/repository.quantumrepo.android/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/InvisibleQuantum/repository.quantumrepo.android/master/addons.xml.md5</checksum>
+		<datadir>https://raw.githubusercontent.com/InvisibleQuantum/repository.quantumrepo.android/master/</datadir>
+		<artdir>https://raw.githubusercontent.com/InvisibleQuantum/repository.quantumrepo.android/master/</artdir>
+		<hashes>false</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">InvisibleQuantum Kodi Repository für Android</summary>
+		<summary lang="en_GB">InvisibleQuantum Kodi Repository for Android</summary>
+		<summary lang="en_US">InvisibleQuantum Kodi Repository for Android</summary>
+		<description lang="de_DE">InvisibleQuantum Kodi Repository für Android</description>
+		<description lang="en_GB">InvisibleQuantum Kodi Repository for Android</description>
+		<description lang="en_US">InvisibleQuantum Kodi Repository for Android</description>
+		<disclaimer lang="de_DE">Fehler oder andere Anfragen hier melden: https://github.com/InvisibleQuantum/repository.quantumrepo/issues/</disclaimer>
+		<disclaimer lang="en_GB">Report bugs or other requests here: https://github.com/InvisibleQuantum/repository.quantumrepo/issues/</disclaimer>
+		<disclaimer lang="en_US">Report bugs or other requests here: https://github.com/InvisibleQuantum/repository.quantumrepo/issues/</disclaimer>
+		<platform>android</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+			<screenshot>resources/fanart.png</screenshot>
+			<screenshot>resources/fanart.png</screenshot>
+			<screenshot>resources/fanart.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.4" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Rector Repository">
+		<dir maxversion="18.9.0">
+			<info>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/</datadir>
+		</dir>
+		<dir minversion="18.9.700">
+			<info>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python3/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python3/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python3/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">A little place for my stuff.</summary>
+		<description lang="en">I'm Rector, I do stuff, I put it here.</description>
+		<platform>all</platform>
+		<disclaimer />
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.tva.common" name="TVADDONS.CO Resolvers Repository" version="4.0.0" provider-name="tvaddons">
+    <extension point="xbmc.addon.repository" name="TVADDONS.CO Resolvers Repository">
+    <dir>
+        <info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
+    </dir>
+
+    <dir minversion="18.0" maxversion="18.9.0">
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/leia/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/leia/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/leia/</datadir>
+    </dir>
+
+    <dir minversion="19.0">
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/matrix/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/matrix/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/matrix/</datadir>
+    </dir>
+
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Unofficial Resolvers for the Kodi Media Center</summary>
+        <description>Unofficial Resolvers for the Kodi Media Center. Please visit www.tvaddons.co for support!</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="4.0.0" provider-name="tvaddons">
+	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
+	<dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+	</dir>
+
+    <dir minversion="18.0" maxversion="18.9.0">
+		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/leia/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/leia/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/leia/</datadir>
+    </dir>
+
+    <dir minversion="19.0">
+		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/matrix/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/matrix/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/matrix/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Unofficial Kodi Addons from TVADDONS.CO</summary>
+		<description>Unofficial Kodi Addons from the TVADDONS.CO Add-on Repository. Please visit www.tvaddons.co for support!
+
+Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
+         <disclaimer>TVADDONS.CO did not make all the add-ons in this repository and is not responsible for their content.</disclaimer>
+		<platform>all</platform>
+                <forum>https://www.tvaddons.co/forums</forum>
+                <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
+<addon id="repository.xstream" name="xStream Repository" version="1.1.5" provider-name="xStream-Team">
+    <extension point="xbmc.addon.repository" name="xStream Repository">
+        <info compressed="false">https://raw.github.com/streamxstream/xStreamRepo/master/addons.xml</info>
+        <checksum>https://raw.github.com/streamxstream/xStreamRepo/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.github.com/streamxstream/xStreamRepo/master/</datadir>
+        <dir>
+            <info compressed="false">https://raw.github.com/streamxstream/xStreamRepo/master/addons.xml</info>
+            <checksum>https://raw.github.com/streamxstream/xStreamRepo/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/streamxstream/xStreamRepo/master/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">xStream Repository</summary>
+        <description lang="de">Dies ist das offizielle xStream Addon-Verzeichnis.[CR]Bei der Bereitstellung einer neuen Version von xStream wird diese auf Funktionalität geprüft. Sollten dennoch Probleme auftreten benachrichtige bitte das offizielle xStream-Team.</description>
+        <disclaimer lang="de">Die dargestellten Inhalte des in diesem Verzeichnis enthaltenen Addons werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+        <platform>all</platform>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+     </assets>
+    </extension>
+</addon>
+
+<addon id="repository.zachmorris" name="Zach Morris Add-ons" version="1.0.0" provider-name="zachmorris">
+    <extension point="xbmc.addon.repository" name="Zach Morris Add-ons">
+        <info compressed="true">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
+        <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Zach Morris Add-ons</summary>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="skin.estuary.modv2" version="3.0.6" name="Estuary MOD V2 (KODI 18)" provider-name="Guilouz">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0"/>
+		<import addon="script.skinshortcuts" version="0.6.5"/>
+		<import addon="script.skin.helper.service" version="1.0.0"/>
+        <import addon="script.skin.helper.widgets" version="1.0.0"/>
+        <import addon="script.image.resource.select" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+ 		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.service" library="scripts/viewswitcher.py" visible="!String.IsEmpty(Window(home).Property(CurrentSkin)) + Skin.HasSetting(ForcedViews.Enabled)" />
+	<extension point="kodi.context.item">
+      	<menu id="kodi.core.main">
+      		<item library="scripts/context_menu_jumptoletter.py">
+ 				<label>$LOCALIZE[40165]</label>
+ 				<visible>!String.IsEmpty(Window(home).Property(CurrentSkin)) + [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,set) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,artist) | String.IsEqual(ListItem.dbtype,album) | String.IsEqual(ListItem.dbtype,musicvideo) | Container.Content(addons)] + !Window.IsVisible(Home)</visible>
+ 			</item>
+      		<item library="scripts/context_menu_moviessets.py">
+ 				<label>$LOCALIZE[40181]</label>
+ 				<visible>!String.IsEmpty(Window(home).Property(CurrentSkin)) + String.IsEqual(ListItem.DBType,set) + !Window.IsVisible(Home)</visible>
+ 			</item>
+      		<item library="scripts/context_menu_extendedinfo.py">
+        		<label>$LOCALIZE[40182]</label>
+        		<visible>!String.IsEmpty(Window(home).Property(CurrentSkin)) + System.HasAddon(script.extendedinfo) + !System.HasAddon(context.extendedinfo.dialog) + [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)]</visible>
+      		</item>
+    	</menu>
+ 	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Estuary MOD V2 skin by Guilouz</summary>
+		<summary lang="fr_FR">Thème Estuary MOD V2 par Guilouz</summary>
+		<description lang="en_GB">Estuary MOD V2 is a mod from Estuary by Guilouz for Kodi 18. It attempts to be easy for first time Kodi users to understand and use.</description>
+		<description lang="fr_FR">Estuary MOD V2 est un mod de Estuary par Guilouz pour Kodi 18. Il est facile à comprendre et à utiliser pour les utilisateurs novices de Kodi.</description>
+		<disclaimer lang="en_GB">For better experience, be sure to install all addons required by the theme.</disclaimer>
+		<disclaimer lang="fr_FR">Pour une meilleure expérience, assurez-vous d'installer toutes les extensions requises par le thème.</disclaimer>
+		<platform>all</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<source>https://github.com/Guilouz/skin.estuary.modv2</source>
+			<assets>
+				<icon>resources/icon.png</icon>
+				<fanart>resources/fanart.jpg</fanart>
+				<screenshot>resources/screenshot-01.jpg</screenshot>
+				<screenshot>resources/screenshot-02.jpg</screenshot>
+				<screenshot>resources/screenshot-03.jpg</screenshot>
+				<screenshot>resources/screenshot-04.jpg</screenshot>
+				<screenshot>resources/screenshot-05.jpg</screenshot>
+				<screenshot>resources/screenshot-06.jpg</screenshot>
+				<screenshot>resources/screenshot-07.jpg</screenshot>
+				<screenshot>resources/screenshot-08.jpg</screenshot>
+				<screenshot>resources/screenshot-09.jpg</screenshot>
+				<screenshot>resources/screenshot-10.jpg</screenshot>
+				<screenshot>resources/screenshot-11.jpg</screenshot>
+			</assets>
+			<news>[B]3.0.6[/B][CR]• Keyboard layout fixes[CR]• Fix for web-dl flag icon with movies have 'web' word in their names[CR][CR][B]3.0.5[/B][CR]• Add number of bits per sample on music OSD[CR]• Add Russian translation by salashnik[CR]• Add Czech translation by Pavuucek[CR]• Add Spanish translation by notorius28[CR]• Display seekbar on showtime action[CR]• Improve detection of audio CDs using an infobool[CR]• Fix Holidays themes[CR]• Minor fixes[CR][CR][B]3.0.4[/B][CR]• KODI 18 : Bump target GUI API to 5.14.0[CR]• KODI 18 : Add GUI for Radio Data System (RDS)[CR]• Add support for 'Next Up' addon by im85288[CR]• Add 8K flag icon[CR]• Add Rip audio-cd from 'Disc' on home menu[CR]• Add Hebrew and Armenian typefaces to the fonts[CR]• Video OSD and Music OSD enhancements/fixes[CR]• Minor fixes[CR][CR][B]3.0.3[/B][CR]• KODI 18 : Video OSD - Hide 'Previous' button for non-seekable streams[CR]• KODI 18 : Game - Add controller description[CR]• KODI 18 : Game - Add 'Get all' button to controller dialog[CR]• KODI 18 : Game OSD - Show help dialog on first view[CR]• KODI 18 : Game OSD - Finish renaming 'View mode' to 'Stretch mode'[CR]• KODI 18 : Game OSD - Extend help dialog to explain lack of remote support[CR]• Add 'HDTV', 'VHS' and 'HDDVD' flag icons[CR]• Fix condition for focus on the stop button[CR]• Minor fixes[CR][CR][B]3.0.2[/B][CR]KODI 18 : • Add 'sorty by' and 'sort order' for epg grid channels[CR]• Add 'mp3float' flag icon[CR]• Fix TV Shows ratings in some views[CR]• Minor fixes[CR][CR][B]3.0.1[/B][CR]• Add support for CoreELEC settings addon[CR]• Add DefaultMusicSources icon[CR]• Game : Update available views[CR]• Game OSD : Rename 'View mode' setting label to 'Stretch mode'[CR]• Game OSD : Rename 'Input settings' setting label to 'Controls'[CR]• Fix lists on dialog video info[CR]• Fix some textures[CR]• Fix keyboard navigation[CR]• Minor fixes[CR][CR][B]3.0.0[/B][CR]• KODI 18 : Add 'Advanced settings' button to settings list for Game OSD[CR]• KODI 18 : Add video rotation setting for Game OSD[CR]• Add new video info dialog (Thanks to jurialmunkey and VikkiXavier)[CR]• Add new music info dialog[CR]• Add new extended info dialog[CR]• Add new text viewer window[CR]• Add setting to disable fullscreen video info for movies and TV shows[CR]• Remove music themes feature which caused crashes[CR]• Minor fixes[CR][CR][B]2.9.9[/B][CR]• KODI 18 : Allow user to select resolutions[CR]• Add video fps flag icon on OSD[CR]• Changes in playing trailers on video info (Thanks to jurialmunkey)[CR]• Fix music themes with video addons[CR]• Minor fixes[CR][CR][B]2.9.8[/B][CR]• KODI 18 : Audio DSP removal[CR]• Add support for music themes for movies and TV shows (theme.mp3 files) (Thanks to manfeed)[CR]• Minor fixes[CR][CR][B]2.9.7[/B][CR]• KODI 18 : Add PVR Timeshift Offset[CR]• KODI 18 : Add Epg Event Seek Time[CR]• KODI 18 : Introduced control 402 for epg event seek percentage[CR]• Enable 'Wall (thumbnails)' and 'InfoWall (thumbnails)' views for artists[CR]• Improvements[CR]• Fix forced views (thanks to hawkeyexp)[CR]• Minor fixes[CR][CR][B]2.9.6[/B][CR]• KODI 18 : Use subtitle setting osd instead of custom dialog[CR]• Add possibility to disable default splash screen[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.9.5[/B][CR]• KODI 18 : RetroPlayer: Disable reset hotkey[CR]• Add default splash screen[CR]• Add new Icon and Fanart[CR]• Add icon for font addons[CR]• Add original title on video info[CR]• Remove possibility to edit power menu to avoid some crash[CR]• Improvement[CR][CR][B]2.9.4[/B][CR]• Add scope mode for constant image height (CIH) setup (OSD only)[CR]• Add new fullscreen info for movies and episodes[CR]• Add possibility to show ratings and user ratings in same time[CR]• Add tags on dialog info[CR]• Improve support for GlobalSearch 8.x.x addon[CR]• Improve PVR channels OSD[CR]• Others improvements[CR]• Minor fixes[CR][CR][B]2.9.3[/B][CR]• Add support GlobalSearch 8.x.x addon[CR]• Add support for music artworks with Artwork Beef addon[CR]• Add movies set button on video info dialog[CR]• Add progress bar to PVR widgets[CR]• Add support for 'KN Switchtimer Service' addon on PVR info dialog[CR]• Improve 'Icons Wall' view for PVR channels[CR]• Improve dialog info windows[CR]• Add possibility to show channels groups on PVR Guide[CR]• Many others improvements in PVR[CR]• Fix forced views with a script from hawkeyexp[CR]• Fix PVR NextUp popup[CR]• Minor fixes[CR][CR][B]2.9.2[/B][CR]• Fix for movies sets overview[CR]• Minor fixes (Thanks to Angelinas)[CR][CR][B]2.9.1[/B][CR]• Add new 'Icons Wall' view for PVR channels[CR]• Add Valentine's Day and Easter themes[CR]• Add possibility to change video lyrics colors[CR]• Minor fixes[CR][CR][B]2.9.0[/B][CR]• KODI 18 : Move recording control and info functionality from player to PVR[CR]• KODI 18 : Add button to bring up program selection dialog[CR]• Add support for more aspect ratios (used by newer phones)[CR]• Add Christmas (1 december to 2 january) and Halloween (30-31 october) themes[CR]• Add extended info when playing music[CR]• Minor fixes[CR][CR][B]2.8.9[/B][CR]• Add support for music clearart on music OSD[CR]• Improvements[CR]• Fix font issue[CR]• Minor fixes[CR][CR][B]2.8.8[/B][CR]• Improve PVR info dialog[CR]• Add new 'Christmas' pattern[CR]• Fix libraries fanarts when music is played[CR]• Fix movies sets logos on 'Shift View'[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.8.7[/B][CR]• Remove protection against banned addons aka Caretaker[CR]• Replace 'Artwork Downloader' support by 'Artwork Beef' (several advantages)[CR]• Enable 'Fanart' view for music videos[CR]• Fix PVR Group Manager channellist scrollbar position[CR]• Fix video in background when opacity is set to 100%[CR]• Minor fixes[CR][CR][B]2.8.6[/B][CR]• Add warning popup to just alert people and possible to disable it[CR]• Remove unload skin for protection against banned addons[CR][CR][B]2.8.5[/B][CR]• Fix close warning popup[CR][CR][B]2.8.4[/B][CR]• Add protection against banned addons (Thanks to sualfred)[CR]• Add (rating) star symbols to fontset (Thanks to Jeroen)[CR]• Improvements[CR]• Fix logon/logoff on power menu[CR]• Minor fixes[CR][CR][B]2.8.3[/B][CR]• Remove 'doNotShareMenu' argument[CR][CR][B]2.8.2[/B][CR]• Add games addons widget to games tab[CR]• Add Genres on list and wide list views[CR]• New Favourites window[CR]• Fix Favourites widget[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.8.1[/B][CR]• KODI 18 : Add filter description to video filter dialog[CR]• Minor fixes[CR][CR][B]2.8.0[/B][CR]• KODI 18 : Add Volume setting to Game OSD[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.10[/B][CR]• KODI 18 : RetroPlayer: Add renderer for Windows, OpenGL and OpenGLES[CR]• Add possibility to use small video OSD[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.9[/B][CR]• Add possibility to show visualisation effects behind background[CR]• Improvements[CR]• Fix missing 'Jump to letter' functionality for some views[CR]• Fix pause video during access to extended info with TV Shows[CR]• Fix on PVR Radio[CR]• Minor fixes[CR][CR][B]2.7.8[/B][CR]• Add possibility to disable Clearlogo on OSD[CR]• OSD info improvements[CR]• Fix Video Lyrics[CR]• Minor fixes[CR][CR][B]2.7.7[/B][CR]• Add 'Jump to letter' functionality to context menu[CR]• Video OSD improvements[CR]• Music OSD improvements[CR]• PVR OSD improvements[CR]• Fix for PVR info[CR]• Minor fixes[CR][CR][B]2.7.6[/B][CR]• KODI 18 : Implement FullscreenGame window[CR]• Replace genres widget by new one based on genres content (thanks to sualfred for his idea)[CR]• Add new genres widgets list/panel for Personal widgets[CR]• Add new 'Most played music videos' default widget[CR]• Add possibility to show media names with widgets names[CR]• Add new functionality 'Jump to letter' when scrollbar is focused (thanks to jurialmunkey for his idea)[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.5[/B][CR]• KODI 18 : Add support for epg tag playback[CR]• KODI 18 : New OSD dialog for video games settings[CR]• Add possibility to automatically show music video info at beginning and end of playing (Thanks to jurialmunkey)[CR]• Add possibility to replace background when fanarts are disabled[CR]• Improve PVR OSD info[CR]• Improve video OSD info[CR]• Improve 'TV Show - Next Aired' addon[CR]• Enable more views for video addons[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.4[/B][CR]• Add possibility to choose when video info must be shown on video OSD[CR]• Add support for Artworks on OSD video info for addons[CR]• Add 'Recommended Youtube videos' button on OSD for Youtube addon (Thanks to jurialmunkey)[CR]• Add support for video countries icons pack[CR]• Add 'Get all Artworks' button to context menu[CR]• Improve music visualisation[CR]• Minor fix[CR][CR][B]2.7.3[/B][CR]• Video info are now displayed when video is paused with possibility to disable it[CR]• Improve OSD info[CR]• Add fallback icons for mediaflags[CR]• Add animated poster on video info dialog[CR]• Minor changes and improvements[CR]• Fix issue with scripts for others skins[CR]• Minor fixes[CR][CR][B]2.7.2[/B][CR]• Add Top 250 from IMDb on dialog video info[CR]• Add button to download all Artworks on dialog video info[CR]• Add toggle button on PVR Guide to enable standard colors for genres[CR]• Add setting to pause video during access to extended info[CR]• Add possibility to configure media flags[CR]• Change appearance of 'TV Show - Next Aired' addon[CR]• Fix fanarts when 'Show video on background' is disable[CR]• Minor changes[CR]• Minor fixes[CR][CR][B]2.7.1[/B][CR]• Add possibility to change media flags color[CR]• Add possibility to show a border for media and choose his color[CR]• Improve dialog video info[CR]• Fix movies sets info with 'Banner' view[CR]• Fix media flags for sets with 'Banner' view[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.0[/B][CR]• Add number of oscars on video info (thanks to jurialmunkey)[CR]• Add possibility to hide fanart opacity in fullscreen mode on music visualisation[CR]• Improve navigation with better animations[CR]• Improve some views[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.6.2[/B][CR]• Add support for Skin Helper Service PVR Artworks[CR]• Enable 'Fanart' view for episodes[CR]• Enable 'Banner' view for movies[CR]• Improve 'Banner' view [CR]• Update thumbs previews for views[CR]• Fix duplicate ratings in list views[CR]• Improvements[CR]• Minor fixes[CR[CR][B]2.6.1[/B][CR]• Changes for Kodi 18[CR]• Add possibility to hide OSD when video is paused[CR]• Add 4K HDR flag icon (filename must contain 'HDR')[CR]• Add shortcut in skin settings to configure personal API key[CR]• Add scrolling text on music visualisation (thanks to jurialmunkey)[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.6.0[/B][CR]• Add possibility to choose gradient colors (thanks to jurialmunkey for idea)[CR]• Add classic list for power menu[CR]• Add Game OSD[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.5.10[/B][CR]• Add support for movies genres icons for Personalized Widgets[CR]• Add missing H262 flag icon[CR]• Improvements[CR]• Fix for PVR in some conditions[CR]• Minor fixes[CR][CR][B]2.5.9[/B][CR]• Add possibility to play trailers on movie information screen[CR]• Reorder necessary addons in Skin Settings[CR]• Minor fixes[CR][CR][B]2.5.8[/B][CR]• Add possibility to show item label on top with minimize main menu setting[CR]• Show mute icon on libraries when mute is enable[CR]• Fix clearlogos disappearance when mute is enable[CR]• Fix for LibreELEC settings addon[CR]• Minor fixes[CR][CR][B]2.5.7[/B][CR]• Add possibility to minimize main menu[CR]• Add media flags icons for 'Triple lists' and 'Double lists' views[CR]• Remove always attrib for defaultcontrol on Settings[CR]• Changes on login screen[CR]• Minor fixes[CR][CR][B]2.5.6[/B][CR]• Add new 'Triple lists' view for TV shows[CR]• Add new 'Double lists' view for seasons[CR]• Changes for Kodi 18 : Migrate add-on settings to settings library[CR]• Minor fixes[CR][CR][B]2.5.5[/B][CR]• Add possibility to show clearlogos at the top of home menu[CR]• Add clearlogos on dialog music info[CR]• Add banners on dialog video info[CR]• Fix episodes thumbs with Personalized Widgets[CR]• Fix on 'Double lists' and 'Triple lists' views to launch full album[CR]• Minor fixes[CR][CR][B]2.5.4[/B][CR]• Add posters on 'Fanart' view[CR]• Add new 'Double lists' view for sets[CR]• Fix end time resume flag icon with AM/PM[CR]• Fix visibility for 'Double lists' and 'Triple lists' views[CR]• Minor fixes[CR][CR][B]2.5.3[/B][CR]• Add new 'Double lists' view for artists and albums[CR]• Add new 'Triple lists' view for artists[CR]• Improve esthetic appearance[CR]• Minor fixes[CR][CR][B]2.5.2[/B][CR]• Add miniatures panel for Personalized Widgets[CR]• Add support for animated weather icons[CR]• Fix missing watched icons and progress bars for Personalized Widgets[CR]• Minor fixes[CR][CR][B]2.5.1[/B][CR]• Fix aspect ratio for widgets[CR]• Minor fixes[CR]• Update German translation[CR][CR][B]2.5.0[/B][CR]/!\ Reboot Kodi and 'Reset main menu and power menu settings' in skin settings after installation of this version /!\[CR]• Add vertical panels for Personalized Widgets[CR]• Add 'Categories' appearance for Personalized Widgets[CR]• Add support for albums back thumbs (file must be placed in album folder and named 'thumbback.jpg')[CR]• Add possibility to change rating text color[CR]• Fix issue with Appearance for Personalized Widgets[CR]• Minor fixes[CR][CR][B]2.4.0[/B][CR][B]/!\ Reboot Kodi and 'Reset main menu and power menu settings' in skin settings after installation of this version /!\[/B][CR]• Add support for Skin Shortcuts template to avoid personalized widgets reloading[CR]• Add possibility to define sort method and sort direction for personalized widgets[CR]• Add rating on video osd info[CR]• Minor changes[CR]• Minor fixes[CR][CR][B]2.3.2[/B][CR]• Add VP9 video codec icon[CR]• Add rewind and forward OSD buttons for PVR TimeShift[CR]• Fix on PVR/Radio widgets[CR]• Fix duration flag icon with Global Search[CR]• Many fixes for Arial font[CR]• Minor changes[CR]• Minor fixes[CR][CR][B]2.3.1[/B][CR]• Add Next Up popup for Live TV[CR]• Add albums count on artists dialog info[CR]• Add possibility to disable 'Settings' shortcut widget[CR]• Add PVR overlay when switching channels[CR]• Fix artists/albums plots on music dialog info[CR]• Fix on PVR[CR]• Fix caterories labels for personalized widgets[CR][CR][B]2.3.0[/B][CR]• Add parental control to protect home menu items and widgets with password[CR]• Add support for German language (Thanks to rainman74)[CR]• Fix CDArts position on Global Search screen[CR]• Fix esthetic appearance[CR]• Minor fixes[CR]• Minor changes[CR][CR][B]2.2.9[/B][CR]• Add support for extendedinfo youtube list[CR]• Add shortcut for movies set info to context menu[CR]• Add shortcut for extended info to context menu[CR]• Fix lyrics on music visualisation[CR]• Fix aspect ratio on tv shows widgets[CR]• Fix channel osd recording indicator visibility[CR]• Fix esthetic appearance[CR]• Minor fixes[CR]• Minor changes[CR][CR][B]2.2.8[/B][CR]• Add info dialog for movies sets[CR]• Fix playlists editor[CR]• Minor fixes[CR][CR][B]2.2.7[/B][CR]• Changes for Kodi 18[CR]• Add possibility to disable colored outline for CDArts[CR]• Add possibility to disable animated lyrics for classic lyrics[CR]• Fix disc overlay for some CDArts[CR]• Fix extended info window for some resolutions[CR]• Fix playlists editor[CR]• Minor fixes[CR][CR][B]2.2.6[/B][CR]• Change extension file '.png' to '.jpg' for games artworks[CR]• Minor fixes[CR][CR][B]2.2.5[/B][CR]• Add games sources widget[CR]• Add support for games artworks (artworks must be named identical to the file name of the game with the extension '.png' and must be in the same folder as games)[CR]• Fix personalized widget 5[CR]• Fix plots and thumbs on info dialog to avoid spoilers[CR]• Fix widgets property[CR]• Changes on widgets when libraries are not populated[CR][CR][B]2.2.4[/B][CR]• Add possibility to show CDArt on widgets and on library[CR]• Add possibility to install addons zip files directly from home submenu[CR]• Minor fixes[CR][CR][B]2.2.3[/B][CR]• Add possibility to use alphabet for scrolling on library (experimental)[CR]• Add more personalized widgets to bypass problem with disappearance and animations of widgets (use one personalized widget per home menu item)[CR]• Changes on duration flag icon with hours and minutes[CR]• Changes on PVR Guide with Kodi 18 last build[CR]• Minor fixes[CR][CR][B]2.2.2[/B][CR]• Add possibility to greyed out watched items in library and on widgets[CR]• Add support for Videolyrics v3 with possibility to fix lyrics colors by song (thanks to manfeed)[CR]• Add support for Kodi Log Uploader addon[CR]• Fix LibreELEC settings buttons[CR]• Minor fixes[CR][CR][B]2.2.1[/B][CR]• Changes for Kodi 18[CR]• Add 'All channels' and 'All radios' widgets[CR]• Fix PVR channels OSD[CR]• Fix esthetic appearance[CR][CR][B]2.2.0[/B][CR]• Add possibility to force views in library[CR]• Add possibility to customize power menu[CR]• Add flags for moviesets widget[CR]• Fix missing view for music[CR]• Fix esthetic appearance[CR]• Fix context menu position[CR]• Minor fixes[CR][CR][B]2.1.9[/B][CR]• Changes for Kodi 18[CR]• Add preview for view mode[CR]• Minor fixes[CR][B]2.1.8[/B][CR]• Add new 'Mosaic (vertical)' view[CR][CR][B]2.1.7[/B][CR]• Changes for Kodi 18[CR]• Fix setting to disable submenu[CR]• Minor fixes[CR][CR][B]2.1.6[/B][CR]• Add new 'Gallery' view[CR]• Add new 'Mosaic' view[CR]• Add clearlogos list for 'Shift' view[CR]• Minor fixes[CR][CR][B]2.1.5[/B][CR]• Add library info on settings widget[CR]• Add ratings/user ratings in list views[CR]• Changes on 'Next episode to watch' widget[CR]• Minor fixes[CR][CR][B]2.1.4[/B][CR]• Add possibility to configure submenus for Personnal Widget[CR]• Add possibility to show banners for episodes/thumbs widgets[CR]• Decrease number of personal widgets to 8 because not possible to show more[CR]• Fix context menu for CU LRC Lyrics addon[CR]• Fix disable Clearlogos on library[CR]• Minor fixes[CR][CR][B]2.1.3[/B][CR]• Fix centered posters on some views[CR]• Fix missing posters flag for moviesets with Wall (Thumbnails) view[CR]• Minnor fixes[CR][CR][B]2.1.2[/B][CR]• Fix adding item with Skin Shortcut[CR][CR][B]2.1.1[/B][CR]• Add support for submenus with Skin Shortcuts addon[CR]• Minnor fixes[CR][CR][B]2.1.0[/B][CR]• Add support for Skin Shortcuts addon to customize home menu and widgets[CR]• Add support for thumbnails with NextUp Service addon[CR]• Add support for Videolyrics v2 (thanks to manfeed)[CR]• Minnor fixes[CR]• Special Thanks to Gracus and ferent for reporting issue[CR][CR][B]2.0.6[/B][CR]• Add two views for power menu[CR]• Add possibility to hide thumbs episodes to avoid spoilers[CR]• Fix banner on music visualisation when next tracks are not available[CR]• Fix missing clearlogos with moviesets widget[CR]• Fix in musicvideo views[CR]• Fix label with moviesets thumbnails[CR]• Enable landscape views for seasons[CR]• Drop support for using hyphen as none value[CR]• Minnor fixes[CR][CR][B]2.0.5[/B][CR]• Add info button on video OSD[CR]• Add language and subtitles language on fullscreen info[CR]• Add button to switch between all/watched/unwatched recordings[CR]• Replace rating badge[CR]• Fix Youtube call[CR]• Minnor fixes[CR][CR][B]2.0.4[/B][CR]• Add new 'InfoWall (thumbnails)' view[CR]• Add new 'Wall (thumbnails)' view[CR]• Add extrafanarts support for 'Fanart' view[CR]• Add icon when item is resumable[CR]• Hide OSD directly after pause[CR]• Fix esthetic appearance[CR]• Minnor fixes[CR][CR][B]2.0.3[/B][CR]• Add Videolyrics (credits to manfeed)[CR]• Add new 'Next episodes to see' widget[CR]• Replace music videos widgets[CR]• Fix color with lyrics[CR]• Fix banner on music fullscreen[CR]• Fix music visualisation[CR]• Fix esthetic appearance[CR][CR][B]2.0.2[/B][CR]• Fix selecting widgets[CR][CR][B]2.0.1[/B][CR]• Add possibility to reorder main menu items[CR]• Add possibility to reset main menu items back to default[CR]• Add possibility to show smaller icons for 'Categories' widgets[CR]• Add studios flag icons for movies widgets[CR]• Add shortcuts on power menu to update video/music library[CR]• Fix colordiffuse for studios and labels flag icons[CR]• Minnor fixes[CR][CR][B]2.0.0[/B][CR]• Initial release[CR]• Add possibility to hide main menu when selecting widgets[CR]• Add possibility to disable each widget[CR]• Add possibility to hide watched items from recently added widgets[CR]• Add possibility to hide episodes plots to avoid spoilers[CR]• Add possibility to change skin color[CR]• Add possibility to change background color[CR]• Add possibility to change pattern color[CR]• Add possibility to change background opacity[CR]• Add possibility to top and bottom bars opacity[CR]• Add possibility to change weather icons pack[CR]• Add possibility to change studios icons pack[CR]• Add possibility to change genres icons pack[CR]• Add possibility to set splash screen (photo, video or music)[CR]• Add possibility to set number of items to display on widgets[CR]• Add possibility to backup/restore skin settings[CR]• Add possibility to disable zoom effect[CR]• Add possibility to enable/disable music visualisation effects on background[CR]• Add possibility to enable/disable video on background[CR]• Add possibility to hide notification popup during playback[CR]• Add possibility to show music visualisation screen when playing song[CR]• Add possibility to ExtraFanarts on music visualisation screen[CR]• Add possibility to animate Fanart/ExtraFanarts on music visualisation screen[CR]• Add possibility to add music visualisation effects on music visualisation screen[CR]• Add possibility to disable Kodi screensaver on music visualisation screen[CR]• Add possibility to start Artwork Downloader at startup[CR]• Add next tracks on music visualisation screen[CR]• Add actors list on video OSD[CR]• Add more buttons on OSD[CR]• Add more flag icons[CR]• Add next airing episodes widget for tv shows[CR]• Add horizontal view for PVR Guide[CR]• Add support for records labels icons pack[CR]• Add support for ExtraFanarts[CR]• Add support for animated posters[CR]• Add support for Clearlogos[CR]• Add support for CDArts[CR]• Add support for Artwork Downloader addon[CR]• Add support for NextUp Notification addon[CR]• Add support for CU LRC Lyrics addon[CR]• Add support for RSS Editor addon[CR]• Add support for Global Search addon[CR]• Add support for TV Show Next Aired addon[CR]• Add support for Extended Info addon[CR]• Add support for LibreELEC settings addon[CR]• Add support for Kiosk mode[CR]• Changes on views[CR]• Changes on volume bar[CR]• Some fixes[CR][CR]</news>
+	</extension>
+</addon>
+</addons>
