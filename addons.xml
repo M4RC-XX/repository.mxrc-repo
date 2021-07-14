@@ -159,20 +159,20 @@ Xship 2021.07.01
 		provider-name="[COLOR limegreen][B]Insta: mxrc_xx_[/B][/COLOR]">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
-    <import addon="repository.guilouz"/>
-    <import addon="repository.kodi.yatse.tv"/>
-    <import addon="repository.kodinerds"/>
-    <import addon="repository.lastship"/>
-    <import addon="repository.marcelveldt"/>
-    <import addon="repository.mxrc"/>
-    <import addon="repository.openwizard"/>
-    <import addon="repository.quantumrepo"/>
-    <import addon="repository.quantumrepo.android"/>
-    <import addon="repository.rector.stuff"/>
-    <import addon="repository.tva.common"/>
-    <import addon="repository.xbmchub"/>
-    <import addon="repository.xstream"/>
-    <import addon="repository.zachmorris"/>
+    <import addon="repository.guilouz" minversion="0.0.1"/>
+    <import addon="repository.kodi.yatse.tv" minversion="0.0.1"/>
+    <import addon="repository.kodinerds" minversion="0.0.1"/>
+    <import addon="repository.lastship" minversion="0.0.1"/>
+    <import addon="repository.marcelveldt" minversion="0.0.1"/>
+    <import addon="repository.mxrc" minversion="0.0.1"/>
+    <import addon="repository.openwizard" minversion="0.0.1"/>
+    <import addon="repository.quantumrepo" minversion="0.0.1"/>
+    <import addon="repository.quantumrepo.android" minversion="0.0.1"/>
+    <import addon="repository.rector.stuff" minversion="0.0.1"/>
+    <import addon="repository.tva.common" minversion="0.0.1"/>
+    <import addon="repository.xbmchub" minversion="0.0.1"/>
+    <import addon="repository.xstream" minversion="0.0.1"/>
+    <import addon="repository.zachmorris" minversion="0.0.1"/>
   </requires>
 	<extension point="xbmc.addon.repository" name="MXRC">
 		<info>https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/addons.xml</info>
