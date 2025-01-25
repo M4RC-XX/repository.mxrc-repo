@@ -1,0 +1,284 @@
+﻿# Kodi Media Center language file
+# Addon Name: Netzkino
+# Addon id: plugin.video.netzkino_de
+# Addon Provider: realvito
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@kodi.org\n"
+"POT-Creation-Date: 2021-03-03 18:00+0000\n"
+"PO-Revision-Date: 2022-05-26 16:00+0000\n"
+"Last-Translator: realvito\n"
+"Language-Team: GERMAN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# strings start
+# SETTINGS-CATEGORIES
+
+msgctxt "#30000"
+msgid "General"
+msgstr "Allgemein"
+
+msgctxt "#30001"
+msgid "Advanced"
+msgstr "Fortgeschritten"
+
+# empty strings from id 30002 to 30109
+# SETTINGS-BUTTONS
+
+msgctxt "#30110"
+msgid "     Play HLS-Videos with [COLOR yellow]*Inputstream.Adaptive*[/COLOR]"
+msgstr "     HLS-Videos mit [COLOR yellow]*Inputstream.Adaptive*[/COLOR] abspielen"
+
+msgctxt "#30111"
+msgid "     Preferred video file format [COLOR yellow](m3u8|mp4)[/COLOR]"
+msgstr "     Bevorzugtes Video-Dateiformat [COLOR yellow](m3u8|mp4)[/COLOR]"
+
+msgctxt "#30112"
+msgid "     Show movies with age rating [COLOR yellow]FSK 18[/COLOR]"
+msgstr "     Filme mit der Altersfreigabe [COLOR yellow]FSK 18[/COLOR] anzeigen"
+
+msgctxt "#30113"
+msgid "     Use Thumb as Background-Fanart"
+msgstr "     Thumb als Hintergrund-Fanart nutzen"
+
+msgctxt "#30114"
+msgid "     Show Addon-Settings in the overview"
+msgstr "     Addon-Einstellungen in der Übersicht anzeigen"
+
+msgctxt "#30115"
+msgid "     Detailed Addon-Debug (otherwise only Minimal-Log)"
+msgstr "     Addon-Debug mit Details (sonst nur Minimal-Log)"
+
+# empty strings from id 30116 to 30229
+# SETTINGS-TITLES
+
+msgctxt "#30230"
+msgid "[B][COLOR ff0099ff]PLAY[/COLOR][/B]"
+msgstr "[B][COLOR ff0099ff]ABSPIELEN[/COLOR][/B]"
+
+msgctxt "#30231"
+msgid "[B][COLOR ff0099ff]YOUTH PROTECTION[/COLOR][/B]"
+msgstr "[B][COLOR ff0099ff]JUGENDSCHUTZ[/COLOR][/B]"
+
+msgctxt "#30232"
+msgid "[B][COLOR ff0099ff]FANART[/COLOR][/B]"
+msgstr "[B][COLOR ff0099ff]FANART[/COLOR][/B]"
+
+msgctxt "#30233"
+msgid "[B][COLOR ff0099ff]SETTINGS[/COLOR][/B]"
+msgstr "[B][COLOR ff0099ff]EINSTELLUNGEN[/COLOR][/B]"
+
+msgctxt "#30234"
+msgid "[B][COLOR ff0099ff]LOG[/COLOR][/B]"
+msgstr "[B][COLOR ff0099ff]LOG[/COLOR][/B]"
+
+# empty strings from id 30235 to 30349
+# SETTINGS-DESCRIPTIONS
+
+# empty strings from id 30350 to 30500
+# WARNING/INFORMATION-MESSAGES-OK
+
+msgctxt "#30501"
+msgid "[COLOR orangered]ATTENTION : ... the required addon *[/COLOR][COLOR yellow]{0:s}[/COLOR][COLOR orangered]* is NOT installed !!![/COLOR]"
+msgstr "[COLOR orangered]ACHTUNG : ... das benötigte Addon *[/COLOR][COLOR yellow]{0:s}[/COLOR][COLOR orangered]* ist NICHT installiert !!![/COLOR]"
+
+# empty strings from id 30502 to 30520
+# WARNING/INFORMATION-MESSAGES-NOTIFICATION
+
+msgctxt "#30521"
+msgid "Netzkino : [COLOR red]!!! {0:s} - ERROR !!![/COLOR]"
+msgstr "Netzkino : [COLOR red]!!! {0:s} - ERROR !!![/COLOR]"
+
+msgctxt "#30522"
+msgid "[COLOR red]An error has occured, please check *LOG* ![/COLOR]"
+msgstr "[COLOR red]Es ist ein Fehler aufgetreten, bitte *LOG* einsehen ![/COLOR]"
+
+msgctxt "#30523"
+msgid "ERROR = [COLOR red]{0:s} ![/COLOR]"
+msgstr "ERROR = [COLOR red]{0:s} ![/COLOR]"
+
+msgctxt "#30524"
+msgid "[COLOR red]Unfortunately there are NO {0:s} :[/COLOR]"
+msgstr "[COLOR red]Leider gibt es KEINE {0:s} :[/COLOR]"
+
+msgctxt "#30525"
+msgid "* [COLOR blue]{0:s}[/COLOR] * at netzkino.de"
+msgstr "* [COLOR blue]{0:s}[/COLOR] * bei netzkino.de"
+
+msgctxt "#30526"
+msgid "* [COLOR blue]In the Category: {0:s}[/COLOR] * at netzkino.de"
+msgstr "* [COLOR blue]In der Rubrik: {0:s}[/COLOR] * bei netzkino.de"
+
+msgctxt "#30527"
+msgid "[COLOR red]The requested *VideoLink* does NOT exist ![/COLOR]"
+msgstr "[COLOR red]Der angeforderte *VideoLink* existiert NICHT ![/COLOR]"
+
+msgctxt "#30528"
+msgid "'Watch later' in NETZKINO :"
+msgstr "'Später ansehen' in NETZKINO :"
+
+msgctxt "#30529"
+msgid "* [COLOR blue]{0:s}[/COLOR] *[COLOR FF008B00] successfully added !!![/COLOR]"
+msgstr "* [COLOR blue]{0:s}[/COLOR] *[COLOR FF008B00] erfolgreich hinzugefügt !!![/COLOR]"
+
+msgctxt "#30530"
+msgid "* [COLOR blue]{0:s}[/COLOR] *[COLOR red] has been deleted !!![/COLOR]"
+msgstr "* [COLOR blue]{0:s}[/COLOR] *[COLOR red] wurde gelöscht !!![/COLOR]"
+
+# empty strings from id 30531 to 30600
+# PLUGIN-MAIN and SIDEMENU
+
+msgctxt "#30601"
+msgid "* Watch later *"
+msgstr "* Später ansehen *"
+
+msgctxt "#30602"
+msgid "New at Netzkino"
+msgstr "Neu bei Netzkino"
+
+msgctxt "#30603"
+msgid "Exclusive at Netzkino"
+msgstr "Exklusiv bei Netzkino"
+
+msgctxt "#30604"
+msgid "Movies with Awards"
+msgstr "Filme mit Auszeichnungen"
+
+msgctxt "#30605"
+msgid "Top 20 - Best rated on IMDb"
+msgstr "Top 20 - Am besten bewertet auf IMDb"
+
+msgctxt "#30606"
+msgid "Highlights"
+msgstr "Highlights"
+
+msgctxt "#30607"
+msgid "Featured"
+msgstr "Featured"
+
+msgctxt "#30608"
+msgid "Most viewed Movies"
+msgstr "Meistgesehene Filme"
+
+msgctxt "#30609"
+msgid "Best rating"
+msgstr "Beste Bewertung"
+
+msgctxt "#30610"
+msgid "Our recommendations of the week"
+msgstr "Unsere Empfehlungen der Woche"
+
+msgctxt "#30611"
+msgid "Last chance - Only available for a short time"
+msgstr "Letzte Chance - Nur noch kurze Zeit verfügbar"
+
+# empty strings from id 30612 to 30620
+
+msgctxt "#30621"
+msgid "Genres"
+msgstr "Genres"
+
+msgctxt "#30622"
+msgid "Search ..."
+msgstr "Suche ..."
+
+msgctxt "#30623"
+msgid "NETZKINO Settings"
+msgstr "NETZKINO Einstellungen"
+
+msgctxt "#30624"
+msgid "Inputstream Settings"
+msgstr "Inputstream Einstellungen"
+
+msgctxt "#30625"
+msgid "Search on NETZKINO ..."
+msgstr "Suche auf NETZKINO ..."
+
+# empty strings from id 30626 to 30630
+
+msgctxt "#30631"
+msgid "Animecinema"
+msgstr "Animekino"
+
+msgctxt "#30632"
+msgid "Actioncinema"
+msgstr "Actionkino"
+
+msgctxt "#30633"
+msgid "Arthousecinema"
+msgstr "Arthousekino"
+
+msgctxt "#30634"
+msgid "Asiacinema"
+msgstr "Asiakino"
+
+msgctxt "#30635"
+msgid "Dramacinema"
+msgstr "Dramakino"
+
+msgctxt "#30636"
+msgid "Kindercinema"
+msgstr "Kinderkino"
+
+msgctxt "#30637"
+msgid "Romanticcinema"
+msgstr "Liebesfilmkino"
+
+msgctxt "#30638"
+msgid "Horrorcinema"
+msgstr "Horrorkino"
+
+msgctxt "#30639"
+msgid "Scificinema"
+msgstr "Scifikino"
+
+msgctxt "#30640"
+msgid "Funcinema"
+msgstr "Spaßkino"
+
+msgctxt "#30641"
+msgid "Thrillercinema"
+msgstr "Thrillerkino"
+
+msgctxt "#30642"
+msgid "Themescinema"
+msgstr "Themenkino"
+
+msgctxt "#30643"
+msgid "Cinema 18+"
+msgstr "Kino ab 18"
+
+msgctxt "#30644"
+msgid "Added at: [COLOR chartreuse]{0:s}[/COLOR][CR][CR]"
+msgstr "Hinzugefügt am: [COLOR chartreuse]{0:s}[/COLOR][CR][CR]"
+
+msgctxt "#30645"
+msgid "From Age {0:s}"
+msgstr "Ab {0:s} Jahren"
+
+msgctxt "#30646"
+msgid "without age restriction"
+msgstr "ohne Altersbeschränkung"
+
+msgctxt "#30647"
+msgid "[COLOR red]  (HD)[/COLOR]"
+msgstr "[COLOR red]  (HD)[/COLOR]"
+
+# empty strings from id 30648 to 30650
+
+msgctxt "#30651"
+msgid "[COLOR chartreuse]Add to 'Watch later' in NK ...[/COLOR]"
+msgstr "[COLOR chartreuse]Zu 'Später ansehen' in NK hinzufügen ...[/COLOR]"
+
+msgctxt "#30652"
+msgid "[COLOR orangered]... Remove from 'Watch later' in NK[/COLOR]"
+msgstr "[COLOR orangered]... Aus 'Später ansehen' in NK entfernen[/COLOR]"
+
+msgctxt "#30654"
+msgid "[COLOR yellow]Add to NK-Playlist[/COLOR]"
+msgstr "[COLOR yellow]In NK-Abspielliste einreihen[/COLOR]"

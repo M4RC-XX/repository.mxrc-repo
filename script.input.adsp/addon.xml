@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.input.adsp" name="Audio DSP" version="0.0.2+matrix" provider-name="Birger Jesch">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides/>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Wrapper for showing the audio dsp compressor window</summary>
+        <summary lang="de_DE">Wrapper zum Anzeigen des Audio DSP Fensters</summary>
+        <description lang="en_GB">This small addon shows the audio dsp compressor window. Simply connect a button of your remote with the addon to adjust your audio compression.</description>
+        <description lang="de_DE">Dieses Addon öffnet den Audio DSP zum Einstellen der Dynamikkompression. Verknüpfe das Addon einfach mit einem Button der Fernbedienung, um die Dynamikkompression bequem einzustellen.</description>
+    </extension>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</addon>
