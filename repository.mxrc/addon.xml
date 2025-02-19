@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.mxrc" name="MXRC Repository" version="0.0.4" provider-name="Insta: mxrc_xx_">
+<addon id="repository.mxrc" name="MXRC Repository" version="0.0.5" provider-name="Insta: mxrc_xx_">
   <extension point="xbmc.addon.repository" name="MXRC Repository">
     <dir minversion="18.0.0" maxversion="22.0.0">
       <info compressed="false">https://raw.githubusercontent.com/M4RC-XX/repository.mxrc-repo/master/addons.xml</info>
